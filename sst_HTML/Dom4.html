@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function add(){
+                var n1=parseInt(document.getElementById("a").value);
+                var n2=parseInt(document.getElementById("b").value);
+                var suii=n1+n2
+                document.getElementById("sum").innerHTML=suii;
+
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Adding two numbers</h1>
+        <label id="">Enter First number</label>
+        <input type="text" id="a"><br>
+        <label for="">Enter second number</label>
+        <input type="text" id="b"><br>
+        <button type="button" onclick='add()'>+</button>
+        <label >Sum </label>
+        <p id="sum"></p>
+    </body>
+</html>

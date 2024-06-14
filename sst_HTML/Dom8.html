@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <script>
+            function validate(){
+                var n1=document.getElementById('a').value;
+                var letters=/^[a-zA-z\s]+$/;
+                var password=document.getElementById('password').value;
+                var pas=document.getElementById('vas').value;
+
+                
+                if(n1==""){
+                    // document.write("enter name"); 
+                    document.getElementById('b').innerHTML='Enter name';
+                }
+                else if(letters.test(n1)==false){
+                    document.getElementById('b').innerHTML='Enter valid alphabets';
+                
+                }
+                else{
+                    document.getElementById('b').innerHTML='';
+
+                }
+                
+                
+            if(password==""){
+
+                    document.getElementById('pass').innerHTML='Enter password';
+                }
+                else if(password<=8){
+                    document.getElementById("password").innerHTML='Enter atleast 8 characters';
+                }
+                if(password==pas){
+                    document.getElementById("vas").innerHTML='Enter ';
+
+                }
+
+                
+
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="post">
+            <table>
+                <tr>
+
+                    <th>Name:</th>
+                    <td>
+                        <input type="text" id="a"><br>
+                        <label id="b" style="color: brown;"></label>
+                    </td>
+                    
+                </tr>
+                <!-- <tr>
+                    <th>
+                        Age
+                    </th>
+                    <td>
+                        <input type="text" id="c">
+                        <label for="" id="d"></label>
+                    </td>
+                </tr> -->
+                <tr>
+                    <th>
+                        Password
+                    </th>
+                    <td>
+                        <input type="password" id="password" ><br>
+                        <label for="" id="pass"></label>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            confirm Password
+                        </th>
+                        <td>
+                            <input type="password" name="" id="vas">
+                            <label for="" id=""></label>
+                        </td>
+                    </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" onclick="validate()">submit</button>
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+    </body>
+</html>

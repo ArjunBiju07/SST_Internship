@@ -1,0 +1,46 @@
+header{
+    background-color: black;
+    display: block;
+}
+
+nav{
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    float: right;
+    margin-right: 80px;
+}
+.menu-item{
+    
+    display: block;
+    background-color: gold;
+    border-radius: 6px;
+
+
+
+}
+.menu-item a{
+    color:black;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.ver{
+    min-height: 410px;
+    
+}
+.abc{
+    background-color: aqua;
+    margin-top: 43px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    margin-left: 536px;
+}

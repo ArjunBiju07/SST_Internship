@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="first"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type="text" id="second"></td> 
+            </tr>
+            <tr>
+                <td>
+
+                </td>
+                <td><button type="" onclick="swap()">swap</button></td>
+            </tr>
+        </table>
+        <script>
+            function swap(){
+                var n1=document.getElementById("first").value;
+                var n2=document.getElementById("second").value;
+                var temp;
+                temp=n1;
+                n1=n2;
+                n2=temp;
+                document.getElementById("first").value=n1;
+                document.getElementById("second").value=n2;
+            }
+        </script>
+    </body>
+</html>

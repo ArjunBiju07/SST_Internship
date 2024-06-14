@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Assi4.css">
+    </head>
+    <body>
+        <header>
+            <img src="download.jpg" alt="" height="110px" width="100px">
+            <nav>
+                <div class="menu-item"> <a href="Assi4.html">Home</a></div>
+                <div class="menu-item"><a href="registration.html">Registration</a></div>
+                <div class="menu-item"><a href="home.html">Buy products</a></div>
+                <div class="menu-item" > <a href="login.html">login</a></div>
+            </nav>
+        </header>
+        <img src="download.jpeg" alt="">
+        <table >
+            <tr>
+                <td>
+                    
+                    <label for="">Product price:</label>
+                </td>
+                <td>
+                    <input type="text" id="price">
+                    <label for="" id="a"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Quantity:</label>
+                </td>
+                <td>
+                    <input type="text" id="quan">
+                    <label for="" id="b"></label>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Total Amount:</label>
+                </td>
+                <td>
+                    <!-- <input type="text" id="total"> -->
+                    <label for="" id="c"></label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="button" onclick="display()">Buy</button></td>
+            </tr>
+        </table>
+        <script>
+            function display(){
+                var n1=document.getElementById("price").value;
+                var n2=document.getElementById("quan").value;
+                var sum=n1*n2;
+                var n3=document.getElementById("c").innerHTML=sum;
+
+                if(n1==""){
+                    document.getElementById('a').innerHTML='Enter the price';
+                }
+                else if(isNaN(n1)){
+                    document.getElementById('a').innerHTML='Enter in number';
+                }
+                else{
+                    document.getElementById('a').innerHTML='';
+                }
+                
+                if(n2==""){
+                    document.getElementById('b').innerHTML='Enter the quantity';
+                }
+                else if(isNaN(n2)){
+                    document.getElementById('b').innerHTML='Enter in number';
+                }
+                else{
+                    document.getElementById('b').innerHTML='';
+                }
+                
+               
+            }
+        </script>
+        <footer>
+            <p>Designed and developed by Arjun </p>
+        </footer>
+    </body>
+</html>
